@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+	<html xmlns:th="http://www.thymeleaf.org">
+	<head th:fragment="head">
+	<meta charset="UTF-8" />
+	<title th:text="'BIENVENIDO AL CARRITO DE COMPRAS'">Insert title here</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/> 
+	</head>
+	<body>
+	
+	 
+	
+		<header th:fragment="header">
+	<nav th:fragment="navbar" xmlns:th="http://www.w3.org/1999/xhtml"
+	     class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	    <a class="navbar-brand text-white" target="_blank"  >CARRITO COMPRAS</a>
+	    <button class="navbar-toggler" type="button" id="botonMenu">
+	        <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse text-white" id="menu">
+	        <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	                <a class="nav-link" th:href="@{/vender/}">COMPRAR</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" th:href="@{/productos/mostrar}">PRODUCTOS </a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link" th:href="@{/ventas/}">VENTAS</a>
+	            </li>
+	        </ul>
+	    </div>
+	    <br/>
+	</nav>
+		</header>
+	
+	
+	
+	
+	
+	
+	<footer th:fragment="footer" class="container">
+			<hr />
+			<img th:src="@{/images/spring.png}" alt="Spring logo" />
+			<p>
+				 <a href="https://projects.spring.io/spring-boot/"> 
+				SPRING BOOT	</a> <br/>
+				  <a href="http://www.thymeleaf.org">THYMELEAF</a>
+			</p>
+			<p>
+				ESTE PROYECTO ES UN BREVE EJEMPLO DESARROLLADO CON SPRING BOOT<br />
+			</p>
+			 
+			 <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+			<script th:src="@{/js/popper.min.js}"></script>
+			<script th:src="@{/js/bootstrap.min.js}"></script>
+			
+		</footer>
+	
+	
+	</body>
+	</html>
